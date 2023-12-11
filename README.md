@@ -1,5 +1,7 @@
 # DUPLICATE-FINDER
 
+In developing.
+
 **Duplicate-Finder** is the **simple** tool which **find duplicate** value in different dotenv-files.
 
 I developed this tool for myself and for analyze different environments (Docker/K8S etc.) at work.
@@ -9,6 +11,14 @@ I developed this tool for myself and for analyze different environments (Docker/
 example of usage:
 ```bash
     duplicate-finder </path/envfile> </path/envfile> </path/envfile>
+```
+
+output:
+```
+Duplicate value: val1
+File: testdata/env1 Variable: test 
+File: testdata/env1 Variable: fish 
+File: testdata/env2 Variable: test2
 ```
 
 ### DEPENDENCIES
