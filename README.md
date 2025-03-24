@@ -38,6 +38,9 @@ after we get the next result:
 "val1"
 ```
 
+The power of this tool will open if you combine result of work with [trufflehog](https://github.com/trufflesecurity/trufflehog) 
+or [gitleaks](https://github.com/gitleaks/gitleaks) and etc.
+
 ### DEPENDENCIES
 
 **Duplicate-Finder** is used [godotenv](github.com/joho/godotenv) for reading dotenv-files
