@@ -15,7 +15,7 @@ duplicates in different dotenv files.
 
 example of usage:
 ```bash
-    dpf find -o report.json -t value -v </path/envfile> </path/envfile> </path/envfile>
+    dpf find -o report.json -t value -v testdata/env1 testdata/env2 testdata/env3
 ```
 
 -v verbose:
@@ -30,7 +30,7 @@ Examples of work [by value](examples/report_by_value.json) and [by key](examples
 Combine with `jq` util:
 
 ```bash
-    dpf find -o report.json </path/envfile> </path/envfile> </path/envfile> | jq  '."result"[] | ."matches"'
+    dpf find -o report.json testdata/env1 testdata/env2 testdata/env3 | jq  '."result"[] | ."matches"'
 ```
 
 after we get the next result:
