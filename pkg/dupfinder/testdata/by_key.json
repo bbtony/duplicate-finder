@@ -1,0 +1,55 @@
+{
+  "type_scan": "key",
+  "result": [
+    {
+      "matches": "test",
+      "duplicates": [
+        {
+          "File": "../../testdata/env1",
+          "Key": "test",
+          "Value": "val1"
+        },
+        {
+          "File": "../../testdata/env2",
+          "Key": "test",
+          "Value": "this is small text for variable"
+        }
+      ]
+    },
+    {
+      "matches": "fish",
+      "duplicates": [
+        {
+          "File": "../../testdata/env1",
+          "Key": "fish",
+          "Value": "val1"
+        },
+        {
+          "File": "../../testdata/env3",
+          "Key": "fish",
+          "Value": "val2"
+        }
+      ]
+    },
+    {
+      "matches": "APP_ENV",
+      "duplicates": [
+        {
+          "File": "../../testdata/env1",
+          "Key": "APP_ENV",
+          "Value": "local"
+        },
+        {
+          "File": "../../testdata/env2",
+          "Key": "APP_ENV",
+          "Value": "test"
+        },
+        {
+          "File": "../../testdata/env3",
+          "Key": "APP_ENV",
+          "Value": "test"
+        }
+      ]
+    }
+  ]
+}
