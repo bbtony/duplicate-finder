@@ -1,0 +1,40 @@
+{
+  "type_scan": "value",
+  "result": [
+    {
+      "matches": "val1",
+      "duplicates": [
+        {
+          "File": "testdata/env1",
+          "Key": "fish",
+          "Value": "val1"
+        },
+        {
+          "File": "testdata/env1",
+          "Key": "test",
+          "Value": "val1"
+        },
+        {
+          "File": "testdata/env2",
+          "Key": "test2",
+          "Value": "val1"
+        }
+      ]
+    },
+    {
+      "matches": "test",
+      "duplicates": [
+        {
+          "File": "testdata/env2",
+          "Key": "APP_ENV",
+          "Value": "test"
+        },
+        {
+          "File": "testdata/env3",
+          "Key": "APP_ENV",
+          "Value": "test"
+        }
+      ]
+    }
+  ]
+}

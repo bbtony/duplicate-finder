@@ -15,16 +15,17 @@ duplicates in different dotenv files.
 
 example of usage:
 ```bash
-    dpf find -o report.json -t value </path/envfile> </path/envfile> </path/envfile>
+    dpf find -o report.json -t value -v </path/envfile> </path/envfile> </path/envfile>
 ```
 
-output:
+-v verbose:
 ```
 Duplicate value: val1
 File: testdata/env1 Variable: test 
 File: testdata/env1 Variable: fish 
 File: testdata/env2 Variable: test2
 ```
+Examples of work [by value](examples/report_by_value.json) and [by key](examples/report_by_key.json)
 
 Combine with `jq` util:
 
